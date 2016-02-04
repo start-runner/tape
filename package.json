@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "tape": "4.x.x",
+    "through": "2.x.x",
     "require-uncached": "1.x.x",
     "babel-runtime": "6.x.x"
   },
