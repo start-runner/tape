@@ -16,12 +16,14 @@ Task is rely on array of files.
 
 ```js
 // tasks/index.js
-import start from 'start';
+import Start from 'start';
 import logger from 'start-simple-logger';
 import files from 'start-files';
 import watch from 'start-watch';
 import tape from 'start-tape';
 import spec from 'tap-spec';
+
+const start = Start(logger());
 
 export function test() {
     return start(
