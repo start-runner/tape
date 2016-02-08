@@ -20,13 +20,13 @@ Task is rely on array of files.
 
 ```js
 import Start from 'start';
-import logger from 'start-simple-logger';
+import reporter from 'start-pretty-reporter';
 import files from 'start-files';
 import watch from 'start-watch';
 import tape from 'start-tape';
 import spec from 'tap-spec';
 
-const start = Start(logger());
+const start = Start(reporter());
 
 export function test() {
     return start(
