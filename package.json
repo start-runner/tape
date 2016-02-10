@@ -1,6 +1,6 @@
 {
   "name": "start-tape",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Tape task for Start",
   "keywords": [ "start", "start-task", "tape", "tap" ],
   "homepage": "https://github.com/start-runner/tape",
