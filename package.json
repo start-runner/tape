@@ -11,7 +11,7 @@
   "dependencies": {
     "tape": "^4.6.0",
     "through": "^2.3.8",
-    "require-uncached": "^1.0.2",
+    "require-uncached": "^1.0.3",
     "babel-runtime": "^6.11.6"
   },
   "devDependencies": {
