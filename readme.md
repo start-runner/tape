@@ -10,8 +10,10 @@
 
 ## Install
 
-```
-npm i -D start-tape
+```sh
+npm install --save-dev start-tape
+# or
+yarn add --dev start-tape
 ```
 
 ## Usage
@@ -26,19 +28,15 @@ import spec from 'tap-spec';
 
 const start = Start(reporter());
 
-export function test() {
-    return start(
-        files('test/**/*.js'),
-        tape(spec)
-    );
-}
+export const test = () => start(
+  files('test/**/*.js'),
+  tape(spec)
+);
 
-export function tdd() {
-    return start(
-        files([ 'lib/**/*.js', 'test/**/*.js']),
-        watch(test)
-    );
-}
+export const tdd = () => start(
+  files([ 'lib/**/*.js', 'test/**/*.js']),
+  watch(test)
+);
 ```
 
 This task relies on array of files, see [documentation](https://github.com/start-runner/start#readme) for details.
